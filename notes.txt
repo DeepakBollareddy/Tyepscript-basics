@@ -1,0 +1,84 @@
+	
+4. Displaying Data and Handling Events
+41. Attribute Binding
+DOM- Document Object Model- Objects that represent the structure of a document. Essentially a tree of Objects in memory.
+
+1:20
+3. Angular Fundamentals
+38. Generating Services Using Angular CLI
+ng g s Service_name
+
+To generate service from Angular CLI(command promopt)
+
+
+
+4:08
+3. Angular Fundamentals
+37. Dependency Injection
+Dependency Injection: we instruct angular to inject a dependencies of the component into the constructor.
+
+
+
+ex:
+
+ constructor(service: CoursesService){
+        this.courses= service.getCourses();
+    }
+   so we instruct dependencies of the component i.e., (service: CoursesService) to the constructor.
+
+1:55
+3. Angular Fundamentals
+36. Services
+To define this logic we implement services. for example to get the list of courses from the http service. then we can reuse the class in multiple places.
+
+0:55
+3. Angular Fundamentals
+36. Services
+We create a fake HTTP endpoint implementation here because of the drawbacks if we implemented a valid HTTP endpoint. The real HTTP endpoint makes unit testing hard and hence we create a fake one.
+
+
+
+writing the logic for calling an HTTP service in the component will tightly couple the component with the HTTP endpoint.
+
+
+
+The second issue is we have to use this logic everywhere to get the result.
+
+
+
+the third issue is that a component shouldn't include any logic except the presentation logic
+
+2:05
+3. Angular Fundamentals
+31. Building Blocks of Angular Apps
+Module is a container with a group of related components.  Every angular app has atleast one module names app module and we break that module into smaller and maintainable modules
+
+1:38
+3. Angular Fundamentals
+31. Building Blocks of Angular Apps
+Component encapsulates the data, HTML template and the logic, which is the area of the screen the user view.
+
+3:31
+2. TypeScript Fundamentals
+26. Modules
+when importing a module
+
+import { Module name } from './point';
+
+./ if both the files are in the same folder.
+
+1:34
+2. TypeScript Fundamentals
+13. What is TypeScript?
+Typescript is a superset of java Script
+Tyepscript contains things like Strong typing, Object oriented Features, Compile time errors, Great tooling and many more, Typescipt has way more features than Java script and hence is widely used.
+
+2:17
+1. Introduction
+7. Webpack
+HMR- (Hot module replacement)whenever source code is modified, webpack automatically refreshes the browser.
+
+1:20
+1. Introduction
+3. Architecture of Angular Apps
+you dont store data on the client side or on the angular because, the data can get deleted if the user clears the data, so the data is stored in the backend servers.
